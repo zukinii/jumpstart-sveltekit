@@ -7,12 +7,14 @@
 	Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ratione fugit corrupti!
 </p>
 
-<style lang="postcss">
+<style lang="scss">
+	$clr: red;
+
 	div {
 		p a {
-			color: red;
+			color: $clr;
 			@apply bg-slate-400;
-			background-color: theme(colors.green.800);
+			// background-color: theme(colors.green.800);
 			font-size: 14px;
 		}
 	}

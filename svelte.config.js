@@ -7,7 +7,14 @@ const config = {
 	kit: {
 		adapter: adapter()
 	},
-	preprocess: [preprocess(), vitePreprocess()]
+	preprocess: [
+		preprocess({
+			scss: {
+				postcss: true
+			}
+		}),
+		vitePreprocess()
+	]
 };
 
 export default config;
